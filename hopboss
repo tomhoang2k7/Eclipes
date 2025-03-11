@@ -50,7 +50,7 @@ ImageLabel_3.Image = "http://www.roblox.com/asset/?id=123680322004726" -- ICON
 UIStroke_6.Parent = MinizedUI
 UIStroke_6.Color = Color3.fromRGB(255, 0, 4)
 UIStroke_6.Thickness = 1.200
-local HopTab = Window:MakeTab({Title = "Hopping", Icon = "server"})
+local HopTab = Window:MakeTab({Title = "HopBoss", Icon = "server"})
 HopTab:AddButton({
     Title = "Hop Dough King",
     Callback = function()
