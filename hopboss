@@ -1,0 +1,71 @@
+local redzlib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+local ApiHop = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangNguyenk8/Scripts/refs/heads/main/Test.lua'))()
+local Window = redzlib:MakeWindow({
+  Title = "Tom | Blox Fruit",
+  SubTitle = "By Tom",
+  SaveFolder = "Tom Hub | Blox Fruits.lua"
+})
+local ScreenGui = Instance.new("ScreenGui")
+local MinizedUI = Instance.new("Frame")
+local UICorner_37 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UIStroke_6 = Instance.new("UIStroke")
+ScreenGui.Name = "ZinnerBeos"
+ScreenGui.Parent = game.CoreGui
+MinizedUI.Name = "MinizedUI"
+MinizedUI.Parent = ScreenGui
+MinizedUI.BackgroundColor3 = Color3.fromRGB(16, 17, 18)
+MinizedUI.BackgroundTransparency = 0.040
+MinizedUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MinizedUI.BorderSizePixel = 0
+MinizedUI.Position = UDim2.new(0.0284789652, 0, 0.054862842, 0)
+MinizedUI.Size = UDim2.new(0, 40, 0, 40)
+UICorner_37.CornerRadius = UDim.new(1, 0)
+UICorner_37.Parent = MinizedUI
+TextButton_2.Parent = MinizedUI
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Size = UDim2.new(1, 0, 1, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.Activated:Connect(function()
+    pcall(function()
+        if game.CoreGui:FindFirstChild("redz Library V5").MainFrame then
+            game.CoreGui:FindFirstChild("redz Library V5").MainFrame.Visible = not game.CoreGui:FindFirstChild("redz Library V5").MainFrame.Visible
+        end
+    end)
+end)
+ImageLabel_3.Parent = MinizedUI
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=123680322004726" -- ICON
+UIStroke_6.Parent = MinizedUI
+UIStroke_6.Color = Color3.fromRGB(255, 0, 4)
+UIStroke_6.Thickness = 1.200
+local HopTab = Window:MakeTab({Title = "Hopping", Icon = "server"})
+HopTab:AddButton({
+    Title = "Hop Dough King",
+    Callback = function()
+        ApiHop:HopDoughKing()
+    end
+})
+HopTab:AddButton({
+    Title = "Hop Rip Indra",
+    Callback = function()
+        ApiHop:HopRipindra()
+    end
+})
+HopTab:AddButton({
+    Title = "Hop Mirage",
+    Callback = function()
+        ApiHop:HopMirage()
+    end
+})
