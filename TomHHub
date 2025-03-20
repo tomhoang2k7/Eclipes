@@ -117,7 +117,7 @@ local v9 = CreateObject("TextLabel", {
     Name = "Top",
     TextTransparency = 1,
     Parent = v6,
-    BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+    BackgroundColor3 = Color3.fromRGB(0, 0, 250),
     BackgroundTransparency = 1,
     Position = UDim2.new(0, 30, 0, 70),
     Size = UDim2.new(0, 301, 0, 20),
@@ -1585,9 +1585,9 @@ function UpdatePlayerChams()
                         v1153.BackgroundTransparency = 1;
                         v1153.TextStrokeTransparency = 0.5;
                         if (v428.Team == game.Players.LocalPlayer.Team) then
-                            v1153.TextColor3 = Color3.new(0, 0, 254);
+                            v1153.TextColor3 = Color3.new(0, 0, 250);
                         else
-                            v1153.TextColor3 = Color3.new(255, 0, 0);
+                            v1153.TextColor3 = Color3.new(0, 0, 0);
                         end
                     else
                         v428.Character.Head["NameEsp" .. Number ].TextLabel.Text = v428.Name .. " | " .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v428.Character.Head.Position).Magnitude / 3) .. " Distance\nHealth : " .. v20((v428.Character.Humanoid.Health * 100) / v428.Character.Humanoid.MaxHealth) .. "%" ;
@@ -1629,7 +1629,7 @@ function UpdateChestChams()
                                 v1481.Text = "Chest 2" .. " \n" .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v430.Position).Magnitude / 3) .. " Distance" ;
                             end
                             if (v430.Name == "Chest3") then
-                                v1481.TextColor3 = Color3.fromRGB(85, 255, 255);
+                                v1481.TextColor3 = Color3.fromRGB(85, 0, 0);
                                 v1481.Text = "Chest 3" .. " \n" .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v430.Position).Magnitude / 3) .. " Distance" ;
                             end
                         else
@@ -1702,7 +1702,7 @@ function UpdateFlowerChams()
                         end
                         if (v434.Name == "Flower2") then
                             v1189.Text = "Red Flower" .. " \n" .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v434.Position).Magnitude / 3) .. " Distance" ;
-                            v1189.TextColor3 = Color3.fromRGB(255, 0, 0);
+                            v1189.TextColor3 = Color3.fromRGB(250, 0, 0);
                         end
                     else
                         v434["NameEsp" .. Number ].TextLabel.Text = v434.Name .. "   \n" .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v434.Position).Magnitude / 3) .. " Distance" ;
@@ -1733,7 +1733,7 @@ function UpdateRealFruitChams()
                     v914.TextYAlignment = "Top";
                     v914.BackgroundTransparency = 1;
                     v914.TextStrokeTransparency = 0.5;
-                    v914.TextColor3 = Color3.fromRGB(255, 0, 0);
+                    v914.TextColor3 = Color3.fromRGB(250, 0, 0);
                     v914.Text = v436.Name .. " \n" .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v436.Handle.Position).Magnitude / 3) .. " Distance" ;
                 else
                     v436.Handle["NameEsp" .. Number ].TextLabel.Text = v436.Name .. " " .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v436.Handle.Position).Magnitude / 3) .. " Distance" ;
@@ -2633,7 +2633,7 @@ v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
 v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=103985507475473";
+v23.Image = "http://www.roblox.com/asset/?id=133796011846199";
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(0, 12);
 v25.Parent = v23;
